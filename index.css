@@ -1,0 +1,441 @@
+
+
+:root {
+    --font_section_hero: 16px;
+    --font_aboutusText: 40px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 99.1vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    opacity: 90%;
+    color: rgb(231, 228, 228);
+    height: 50px;
+    opacity: 90%;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 10;
+
+    & h1 {
+        font-size: 12px;
+        margin-left: 20px;
+    }
+
+    & ul 
+    {
+        display: flex;
+        gap: 30px;
+        margin-right: 20px;
+
+    & li {
+        list-style: none;
+        font-size: 0.6rem;
+        font-weight: 550;
+    }
+
+    }
+
+}
+
+.Hero_Section {
+    width: auto;
+    height: 350px;
+    color: white;
+    position: relative;
+    background-color: #034b4e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    z-index: 1;
+
+    & h1 {
+        font-size: var(--font_section_hero);
+        z-index: 4;
+    }
+
+    & h2 {
+        font-size: calc(var(--font_section_hero) / 1.4);
+        z-index: 4;
+    }
+
+    & button {
+        margin-top: 30px;
+        padding: 10px;
+        width: 60%;
+        border-radius: 20px;
+        border: none;
+        opacity: 1;
+        background-color: #034b4e;
+        border: 1px solid;
+        color: white;
+        font-weight: 800;
+        border: none;
+        z-index: 4;
+        max-width: 500px;
+    }
+
+    & button:hover {
+        background-color: #03484b;
+        cursor: pointer;
+    }
+
+    & img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0%;
+        left: 0%; 
+        opacity: 0.2;
+        background-color: transparent;
+        z-index: 1;
+        max-width: 100%;
+        object-fit: cover;
+    }
+}
+
+.AboutUs_Section {
+
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+
+    & .aboutUs_title {
+        font-size: calc(var(--font_aboutusText));
+        color: #03575B;
+    }
+
+    & .AboutUs_Text 
+    {
+        width: 99%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        & h2 {
+            font-size: calc(var(--font_aboutusText)/2.1);
+            text-align: center;
+            color: #076469;
+        }
+    }
+
+    & .aboutUs_ImageContainer {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        gap: 20px;
+        flex-wrap: wrap;
+        
+
+        & img {
+            border: 1px solid #03575B;
+            width: 45%;
+            height: 250px;
+            margin-bottom: 20px;
+            min-width: 130px;
+            max-width: 280px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 4px 4px #023436;
+        }
+
+        & img:hover {
+            width: 46%;
+            height: 280px;
+            transition: 0.2s;
+        }
+    }
+
+}
+
+
+.Feats_Section {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    
+
+    .Feat {
+        width: 20%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+
+
+        img {
+            width: 30%;
+        }
+
+        h1 {
+            font-size: 16px;
+            color: #012b2c;
+            font-weight: 800;
+        }
+    }
+}
+
+.Services_Section {
+    margin-top: 40px;
+    width: 100%;
+    background-color: #034b4e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    rotate: -0.3deg;
+
+
+    h1 {
+        font-size: 40px;
+        color: white;
+    }
+
+    .services_container {
+
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        max-width: 1110px;
+
+        .services {
+            summary {
+                width: 250px;
+                height: 200px;
+                background-color: white;
+                border-radius: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 10px;
+                transition: 0.5s;
+                cursor: pointer;
+
+                h1 {
+                    color: #033a3b;
+                    font-size: 20px;
+                }
+    
+                img {
+                    width: 40%;
+                }
+            }
+
+            summary:hover {
+                margin-bottom: 20px;
+                transition: 0.5s;
+            }
+        }
+    }
+
+}
+
+.profissionals_Section {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 30px;
+
+    .profissionals_container {
+
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 30px;
+
+        & .profissional_card {
+            width: 30%;
+            border: 1px solid;
+            text-align: center;
+            padding: 20px;
+            background-color: #03575B;
+            border-radius: 30px;
+    
+            & h2 {
+                margin-top: 40px;
+                font-size: 17px;
+                color: white;
+            }
+    
+            & img {
+                width: 80%;
+                max-width: 200px;
+                border-radius: 100px;
+            }
+    
+            & h1 {
+                border-bottom: 1px solid;
+                padding-bottom: 10px;
+                width: 100%;
+                color: white;
+                font-size: 26px;
+            }
+        }
+    }
+
+}
+
+
+@media  screen and (max-width: 500px) {
+    .AboutUs_Section {
+
+        & .aboutUs_ImageContainer 
+        {
+            & img {
+                width: 43%;
+                height: 180px;
+                margin-bottom: 20px;
+            }
+        }
+    
+    }
+
+    body {
+        width: 100vw;
+    }
+}
+
+@media  screen and (max-width: 350px) {
+
+
+    :root {
+        --font_section_hero: 13px;
+        --font_aboutusText: 40px;
+    }
+
+    .Hero_Section {
+        & button {
+            width: 80%;
+        }
+    }
+
+    .AboutUs_Section {
+
+        & .aboutUs_ImageContainer 
+        {
+            & img {
+                width: 43%;
+                height: 180px;
+                margin-bottom: 20px;
+            }
+        }
+    
+    }
+}
+
+@media  screen and (min-width: 850px) {
+
+
+    :root {
+        --font_section_hero: 25px;
+        --font_aboutusText: 40px;
+    }
+
+    .Hero_Section {
+
+        height: 650px;
+
+        & button {
+            width: 80%;
+        }
+    }
+
+    .AboutUs_Section {
+
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+        justify-content: center;
+        width: 95%;
+        padding-bottom: 20px;
+        
+        & .AboutUs_Text {
+            width: 40%;
+            display: flex;
+            max-width: 700px;
+            border-radius: 30px;
+            background-color: #045255;
+            box-shadow: 2px 2px 4px 4px #023536;
+
+            & h1, h2 { 
+                color: white;
+            }
+
+            
+        }
+
+        & .aboutUs_ImageContainer 
+        {
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            max-width: 1000px;
+            gap: 30px;
+            
+
+            & img {
+                width: 100%;
+                height: 270px;
+                margin-bottom: 20px;
+                max-width: 350px;
+                max-height: 270px;
+            }
+        }
+    
+    }
+
+    .Services_Section {
+
+        .services_container {
+            .services {
+                summary {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+        }
+
+    }
+}
