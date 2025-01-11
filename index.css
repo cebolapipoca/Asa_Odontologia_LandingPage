@@ -347,6 +347,7 @@ header {
         justify-content: center;
         gap: 14%;
         
+        
         & .commentClient {
 
             width: 60%;
@@ -355,6 +356,9 @@ header {
             border-radius: 30px;
             box-shadow: 3px 5px 13px 5px rgb(63, 62, 62);
             flex-shrink: 0;
+            
+            
+           
     
         & .commentClient_Picture {
            
@@ -402,6 +406,41 @@ header {
         }
     }
 
+    & .buttons_changeContainer {
+
+        display: flex;
+        position: absolute;
+        justify-content: space-between;
+        padding: 20px;
+        width: 98%;
+        
+
+        & .button_changeComment {
+            width: 7%;
+            z-index: 4;
+            padding: 10px;
+           
+        }
+
+
+        & #btn_changeComment1 {
+            rotate: 180deg;
+        }
+
+        & #btn_changeComment1:hover {
+            box-shadow: 0px -10px 20px 1px;
+        }
+
+        & #btn_changeComment2 {
+        
+        }
+
+        & #btn_changeComment2:hover {
+            box-shadow: 0px 10px 20px 1px;
+        }
+    }
+
+
     & .commentClient {
 
         width: 50%;
@@ -409,6 +448,8 @@ header {
         padding: 20px;
         border-radius: 30px;
         box-shadow: 3px 5px 13px 5px rgb(63, 62, 62);
+        transition: 1s;
+        transform: translate(0%, 0);
 
     & .commentClient_Picture {
        
@@ -454,7 +495,50 @@ header {
         color: #012122;
     }
     }
+
+    & .radioCarrousel_Container 
+{
+
+        z-index: 5;
+        position: absolute;
+        top: 80%;
+        width: 50%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .carrousel_radio {
+            z-index: 6;
+            width: 25px;
+            height: 25px;
+            margin: 2px;
+            color: #011516;
+            display: none;
+        }
+
+        & label {
+            border: 1px solid;
+            width: 25px;
+            height: 25px;
+            border-radius: 200px;
+            margin-left: 15px;
+            background-color: #012629;
+            opacity: 70%;
+            border: none;
+            cursor: pointer;
+    }
+
+    & label:hover {
+        background-color: #057f88;
+    }
 }
+}
+
+.contacts_section {
+    
+}
+
 
 
 @media  screen and (max-width: 500px) {

@@ -146,9 +146,13 @@
     <section class="commentClient_Section">
         <img class="commentClient_BackgroundImage" src="images/backgroundDesenhoDentista.png" alt="">
 
+        <div class="buttons_changeContainer">
+            <img src="images/ponta_flecha.svg" class="button_changeComment" id="btn_changeComment1" onclick="MudarComentarioSeta(false)" alt="">
+            <img src="images/ponta_flecha.svg" class="button_changeComment" id="btn_changeComment2" onclick="MudarComentarioSeta(true)" alt="">
+        </div>
 
     <div class="commentClient_container">
-        <div class="commentClient">
+        <div class="commentClient" id="commentClient_1">
                 
             <div class="commentClient_Picture">
                 <img src="images/user.svg" alt="">
@@ -168,11 +172,11 @@
             </h2>
         </div>
 
-        <div class="commentClient">
+        <div class="commentClient" id="commentClient_2">
             
             <div class="commentClient_Picture">
                 <img src="images/user.svg" alt="">
-                <h1>Vanessa Lopes Rodrigues</h1>
+                <h1>Teste 2</h1>
             </div>
 
             <div class="commentClient_stars">
@@ -188,11 +192,11 @@
             </h2>
         </div>
 
-        <div class="commentClient">
+        <div class="commentClient" id="commentClient_3">
             
             <div class="commentClient_Picture">
                 <img src="images/user.svg" alt="">
-                <h1>Vanessa Lopes Rodrigues</h1>
+                <h1>Teste 3</h1>
             </div>
 
             <div class="commentClient_stars">
@@ -209,6 +213,20 @@
         </div>
     </div>
 
+    <div class="radioCarrousel_Container">
+
+        <label class="label_radioCarrousel" for="comment1"></label>
+        <label class="label_radioCarrousel" for="comment2"></label>
+        <label class="label_radioCarrousel" for="comment3"></label>
+
+        <input type="radio" class="carrousel_radio" onchange="MudarComentario()" name="comment" id="comment1">
+        <input type="radio" class="carrousel_radio" onchange="MudarComentario()" name="comment" id="comment2" checked>
+        <input type="radio" class="carrousel_radio" onchange="MudarComentario()" name="comment" id="comment3">
+    </div>
+
+    </section>
+
+    <section class="contacts_section">
         
     </section>
 
