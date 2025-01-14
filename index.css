@@ -441,10 +441,6 @@ header {
             box-shadow: 0px -10px 20px 1px;
         }
 
-        & #btn_changeComment2 {
-        
-        }
-
         & #btn_changeComment2:hover {
             box-shadow: 0px 10px 20px 1px;
         }
@@ -480,7 +476,8 @@ header {
         & h1 {
             font-size: 32px;
             font-weight: 700;
-            color: #032425;
+            /*color: #032425;*/
+            z-index: 10;
         }
 
     }
@@ -502,7 +499,8 @@ header {
     & h2 {
         margin-top: 30px;
         font-size: 22px;
-        color: #012122;
+       /* color: #012122;*/
+        z-index: 10;
     }
     }
 
@@ -545,13 +543,9 @@ header {
 }
 }
 
-.contacts_section {
-    
-}
 
-
-
-@media  screen and (max-width: 500px) {
+@media screen and (max-width: 800px) 
+{
     .AboutUs_Section {
 
         & .aboutUs_ImageContainer 
@@ -582,7 +576,21 @@ header {
             }
         }
     }
+
+    .profissionals_Section {
+
+        & h1 {
+            font-size: 23px;
+        }
+    }
+
+    .sexoo {
+        color: yellow;
+    }
+     
 }
+
+
 
 @media  screen and (max-width: 350px) {
 
@@ -609,6 +617,50 @@ header {
             }
         }
     
+    }
+
+    .profissionals_Section {
+        & h1 {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .profissionals_Section {
+        & .profissionals_container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            & .profissional_card {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                
+                align-items: center;
+                
+
+                & img {
+                    width: 100px;
+                    height: 100px;
+                }
+
+                & h1 {
+                    font-size: 16px;
+                    border-bottom: 1px solid;
+
+                }
+
+                & h2 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .textoaa {
+        
     }
 }
 
@@ -694,7 +746,7 @@ header {
         & .Feat {
 
             & img {
-                width: 40%;
+                width: 20%;
             }
 
             & h1 {
