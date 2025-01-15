@@ -338,7 +338,7 @@ header {
     padding-bottom: 200px;
     
 
-    & .commentClient_BackgroundImage {
+  /*  & .commentClient_BackgroundImage {
         width: 100%;
         height: 100%;
         opacity: 20%;
@@ -347,7 +347,7 @@ header {
         top: 0%;
         left: 0%;
         
-    }
+    } */
 
     & .commentClient_container {
 
@@ -476,7 +476,7 @@ header {
         & h1 {
             font-size: 32px;
             font-weight: 700;
-            /*color: #032425;*/
+            color: #032425;
             z-index: 10;
         }
 
@@ -590,6 +590,36 @@ header {
      
 }
 
+@media screen and (max-width: 500px) {
+    
+    .commentClient_Section {
+        & .commentClient_container
+        {
+            gap: 60px;
+
+            & .commentClient {
+
+                width: 70%;
+
+                & .commentClient_Picture {
+                    & h1 {
+                        font-size: 20px;
+                    }
+                }
+
+                & .commentClient_stars {
+                    & img {
+                        width: 10%;
+                    }
+                }
+
+                & h2 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
 
 
 @media  screen and (max-width: 350px) {
