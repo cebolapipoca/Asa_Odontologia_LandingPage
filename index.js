@@ -1,5 +1,5 @@
+//background-color: #034042;
 
-const scrollX = window.pageYOffset;
 
 function MudarComentario()
 {
@@ -91,6 +91,37 @@ function MudarComentarioSeta(avançar)
     MudarComentario()
 }
 
+function AbrirMenu(abrir)
+{
+    let menu = document.getElementById("menu_mobile")
+
+    if(abrir)
+    {
+        menu.style.display = 'flex';
+        menu.style.left = '20%';
+        menu.style.animationName = 'MenuOpenAnimation'
+        menu.style.animationDuration = '1s'
+        
+    }
+    else {
+        menu.style.animationName = 'MenuExitAnimation'
+        menu.style.animationDuration = '1s'
+        menu.style.left = '100%';
+    }
+}
+
+document.getElementById('body2').addEventListener('scroll', (event)=>{
+    
+
+    if(document.getElementById('body2').scrollTop > 0)
+    {
+        document.querySelector('header').style.backgroundColor = "#034042"
+    }
+    else {
+          document.querySelector('header').style.backgroundColor = "transparent"
+    }
+})
+
+
 MudarComentario()
 
-document.getElementById

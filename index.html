@@ -6,19 +6,41 @@
     <title>Asa Odontologia Integrada</title>
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
+<body id="body">
     
-<div class="body">
+<div class="body" id="body2">
     <header>
         <h1>Asa Odontologia</h1>
-        <ul>
-            <a>Sobre nós</a>
-            <a>Serviços</a>
-            <a href="#contacts_section">Contatos</a>
-        </ul>
+
+        <nav>
+            <ul>
+                <a href="#AboutUs_Section">Sobre nós</a>
+                <a href="#Services_Section">Serviços</a>
+                <a href="#contacts_section">Contatos</a>
+                <a href="#profissionals_Section">Profissionais</a>
+                <a href="#commentClient_Section">Depoimentos</a>
+            </ul>
+        </nav>
+
+        <div class="mobile_menu_button" onclick="AbrirMenu(true)">
+            <img src="images/menu_icon.svg" alt="">
+        </div>
     </header>
 
-    <section class="Hero_Section">
+    <menu id="menu_mobile">
+
+        <span onclick="AbrirMenu(false)">X</span>
+
+        <ul>
+            <li><a href="">Sobre nós</a></li>
+            <li><a href="">Serviços</a></li>
+            <li><a href="">Contatos</a></li>
+            <li><a href="">Profissionais</a></li>
+            <li><a href="">Depoimentos</a></li>
+        </ul>
+    </menu>
+
+    <section class="Hero_Section" id="Hero_Section">
         <h1>ASA ODONTOLOGIA INTEGRADA</h1>
         <h2>Cuidar do sorriso, da saúde e do seu bem-estar é nossa prioridade!</h2>
 
@@ -26,7 +48,7 @@
         <img src="images/medicos.png" alt="">
     </section>
 
-    <section class="Feats_Section">
+    <section class="Feats_Section" id="Feats_Section">
         <div class="Feat">
             <img src="images/cirurgia.svg" alt="">
             <h1>+500 Cirurgias Feitas</h1>
@@ -48,7 +70,7 @@
         </div>
     </section>
 
-    <section class="AboutUs_Section">
+    <section class="AboutUs_Section" id="AboutUs_Section">
         <div class="AboutUs_Text">
             <h1 class="aboutUs_title">Sobre nós</h1>
             <h2>
@@ -70,7 +92,7 @@
         </div>
     </section>
 
-    <section class="Services_Section">
+    <section class="Services_Section" id="Services_Section">
         <h1>Serviços</h1>
     <div class="services_container">
         <details class="services">
@@ -141,7 +163,7 @@
     </div>
     </section>
 
-    <section class="profissionals_Section">
+    <section class="profissionals_Section" id="profissionals_Section">
 
         <h1>Conheça nossos profissionais</h1>
 
@@ -160,7 +182,7 @@
     </div>
     </section>
 
-    <section class="commentClient_Section">
+    <section class="commentClient_Section" id="commentClient_Section">
         
 
         <div class="buttons_changeContainer">
