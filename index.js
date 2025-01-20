@@ -1,4 +1,6 @@
 
+const scrollX = window.pageYOffset;
+
 function MudarComentario()
 {
     let Radio = document.getElementsByClassName('carrousel_radio');
@@ -91,3 +93,4 @@ function MudarComentarioSeta(avançar)
 
 MudarComentario()
 
+document.getElementById

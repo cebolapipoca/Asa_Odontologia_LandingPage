@@ -32,7 +32,7 @@ body {
 
 ::-webkit-scrollbar {
     background-color: transparent;
-    width: 15px;
+    width: 20px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -609,14 +609,14 @@ header {
 
 .contacts_section {
     width: 100%;
-    height: 700px;
+    height: 400px;
     display: flex;
     margin-top: 30px;
     padding-top: 30px;
     flex-direction: column;
     align-items: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
     & .contacts_text {
         display: flex;
@@ -625,20 +625,20 @@ header {
 
         & h1 {
             text-align: center;
-            font-size: 40px;
+            font-size: 30px;
             color: #033e41;
         }
 
         & h2 {
-            font-size: 30px;
+            font-size: 15px;
             color: #034b4e;
             text-decoration: underline;
         }
     }
 
     & .contacts_container {
-        width: 60%;
-        height: 600px;
+        width: 95%;
+        height: 400px;
         margin-top: 40px;
         background-color: #034b4e;
         border-radius: 30px;
@@ -648,6 +648,7 @@ header {
         align-items: center;
         flex-direction: column;
         gap: 20px;
+
         
         & #whatsapp_contact {
             background-color: #0b7a6d;
@@ -661,7 +662,7 @@ header {
         }
 
         & .contact {
-            width: 70%;
+            width: 80%;
             border: 1px solid;
             text-align: center;
             display: flex;
@@ -672,14 +673,16 @@ header {
             border-radius: 30px;
             gap: 20px;
             text-decoration: none;
+
             & img {
-                width: 4%;
+                width: 8%;
                 position: absolute;
                 left: 2%;
             }
 
             & h1 {
                 color: white;
+                font-size: 15px;
             }
 
         }
@@ -688,26 +691,28 @@ header {
 
 footer {
     width: 100%;
-    height: 500px;
-    border: 1px solid;
+    height: auto;
     margin-top: 100px;
     background-color: #034b4e;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    gap: 100px;
 
     & .footer_data_1 {
         
-        width: 60%;
-        height: 400px;
+        width: 100%;
+        height: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-right: 1px solid white;
-        
+        border-bottom: 1px solid white;
         gap: 30px;
+        flex-direction: column;
+        padding-bottom: 40px;
     
         & .local_map {
-            width: 60%;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -739,9 +744,9 @@ footer {
             }
     
             & iframe {
-                width: 20%;
+                width: 90%;
                 height: 300px;
-                min-width: 400px;
+                
                 border: 1px solid;
                 border-radius: 20px;
             }
@@ -751,12 +756,12 @@ footer {
             color: white;
 
             & h1 {
-                font-size: 40px;
+                font-size: 30px;
                 margin-bottom: 20px;
             }
 
             & h2 {
-                font-size: 22px;
+                font-size: 20px;
                 text-align: center;
                 margin-top: 20px;
             }
@@ -767,12 +772,13 @@ footer {
         display: flex;
         flex-direction: column;
         text-align: center;
-        width: 30%;
-        margin-left: 60px;
+        width: 100%;
+        margin-bottom: 60px;
 
         & h1 {
             color: white;
             margin-bottom: 30px;
+            font-size: 25px;
         }
 
         & .social_network {
@@ -783,7 +789,7 @@ footer {
             align-items: center;
 
             & img {
-                width: 10%;
+                width: 8%;
             }
         }
 
@@ -1051,6 +1057,193 @@ footer {
             & h1 {
                 font-size: 18px;
             }
+        }
+    }
+
+    .contacts_section {
+        width: 100%;
+        height: 700px;
+        display: flex;
+        margin-top: 30px;
+        padding-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    
+        & .contacts_text {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+    
+            & h1 {
+                text-align: center;
+                font-size: 40px;
+                color: #033e41;
+            }
+    
+            & h2 {
+                font-size: 30px;
+                color: #034b4e;
+                text-decoration: underline;
+            }
+        }
+    
+        & .contacts_container {
+            width: 60%;
+            height: 600px;
+            margin-top: 40px;
+            background-color: #034b4e;
+            border-radius: 30px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            
+            & #whatsapp_contact {
+                background-color: #0b7a6d;
+                border: none;
+                cursor: pointer;
+            }
+    
+            & #whatsapp_contact:hover {
+                transition: 0.5s;
+                background-color: #09645a;
+            }
+    
+            & .contact {
+                width: 70%;
+                border: 1px solid;
+                text-align: center;
+                display: flex;
+                padding: 20px;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                border-radius: 30px;
+                gap: 20px;
+                text-decoration: none;
+                & img {
+                    width: 4%;
+                    position: absolute;
+                    left: 2%;
+                }
+    
+                & h1 {
+                    color: white;
+                }
+    
+            }
+        }
+    }
+
+    footer {
+        width: 100%;
+        height: 700px;
+        border: 1px solid;
+        margin-top: 100px;
+        background-color: #034b4e;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    
+        & .footer_data_1 {
+            
+            width: 60%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: 1px solid white;
+            border-bottom: none;
+            flex-direction: row;
+            
+            gap: 30px;
+        
+            & .local_map {
+                width: 60%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                
+    
+            & .local_map_text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10px;
+    
+                & img {
+                    width: 10%;
+                }
+    
+                & h2 {
+                    color: white;
+                }
+            }
+    
+                & h1 {
+                    font-size: 20px;
+                    width: 100%;
+                    text-align: center;
+                    color: white;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                }
+        
+                & iframe {
+                    width: 20%;
+                    height: 300px;
+                    min-width: 400px;
+                    border: 1px solid;
+                    border-radius: 20px;
+                }
+            }
+    
+            & .service_hours {
+                color: white;
+    
+                & h1 {
+                    font-size: 40px;
+                    margin-bottom: 20px;
+                }
+    
+                & h2 {
+                    font-size: 22px;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+            }
+        }
+    
+        & .footer_data_2 {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 30%;
+            margin-left: 0px;
+    
+            & h1 {
+                color: white;
+                margin-bottom: 30px;
+            }
+    
+            & .social_network {
+    
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                align-items: center;
+    
+                & img {
+                    width: 15%;
+                }
+            }
+    
+            
         }
     }
 }
